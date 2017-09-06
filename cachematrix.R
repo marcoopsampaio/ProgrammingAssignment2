@@ -37,9 +37,9 @@ cacheSolve <- function(x, ...) {
 
 # Let us test with a very large matrix to see the difference in speed
 ## Performing the first computation of the inverse
-nsize <- 1500
+nsize <- 5000
 mat <- matrix(rnorm(nsize*nsize),nrow=nsize) # assigning a matrix
-inv_mat<- solve(mat) # saving what qwe are supposed to get
+inv_mat<- solve(mat) # saving what we are supposed to get
 
 ## Create special matrix now
 mat_cached <- makeCacheMatrix(mat) 
